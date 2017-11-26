@@ -1,0 +1,65 @@
+#menu-inicial a{
+	margin-top: 20px;
+}
+
+#menu-principal{
+	margin-top: 20px;
+}
+
+body{
+	background-color: #f1f1f1;
+}
+
+.panel-heading h4{
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+}
+
+header a span{ 
+	font-size: 26px;
+	color: black;
+}
+
+#title{
+	font-size: 26px;
+	color: black;
+	font-weight: bold;
+}
+
+#usuario{
+	color: black;
+} 
+
+.menu-perfil{
+	margin-top: 15px;
+}
+
+.col-md-5 label{
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.col-md-5 p{
+	font-size: 16px;
+}
+
+#btn-modal{
+	float: right;
+}
+
+.modal-body{
+	padding-bottom: 60px;
+}
+
+#formBusca button span{
+	color: black;
+	font-size: 18px;
+}
+
+#formBusca{
+	padding-top: 10px;
+	margin-left: 25%;
+}
+
+
+

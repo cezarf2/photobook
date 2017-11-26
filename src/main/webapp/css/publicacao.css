@@ -1,0 +1,27 @@
+#elemFile{
+	display: none;
+}
+
+#selectFile, #viewImage{
+	margin-bottom: 15px;
+}
+
+#viewImage img{
+	width: 550px;
+}
+
+.panel-foto figcaption, #foto-legenda{
+	margin-top: 15px;
+	font-size: 18px;
+}
+
+.panel-foto figure{
+	padding-top: 15px;
+}
+
+.panel-foto a{
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
