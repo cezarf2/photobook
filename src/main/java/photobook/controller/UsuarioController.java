@@ -42,7 +42,7 @@ public class UsuarioController {
 	@GetMapping(value="/users/add")
 	public String visualizarFormAddUsuario(Model model){
 		model.addAttribute("usuario", new Usuario());
-		model.addAttribute("acao", "/users/newuser");
+		model.addAttribute("acao", "/photobook/users/newuser");
 		model.addAttribute("tipo_input_senha", "password");
 		return "cadastro_usuario";
 	}
@@ -86,7 +86,7 @@ public class UsuarioController {
 	public String visualizarFormAlterarUsuario(@PathVariable(value="id") Integer idUsuario,
 			Model model){
 		model.addAttribute("usuario", usuarioDao.getUsuario(idUsuario));
-		model.addAttribute("acao", "/users/update");
+		model.addAttribute("acao", "/photobook/users/update");
 		model.addAttribute("tipo_input_senha", "text");
 		return "editar_usuario";
 	}

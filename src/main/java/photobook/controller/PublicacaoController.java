@@ -32,7 +32,7 @@ public class PublicacaoController {
 	@GetMapping(value="/publicacao/add")
 	public String visualizarFormPublicacao(Model model){
 		model.addAttribute("publicacao", new Publicacao());
-		model.addAttribute("acao", "/publicacao/newpublicacao");
+		model.addAttribute("acao", "/photobook/publicacao/newpublicacao");
 		return "adicionar_publicacao";
 	}
 	
@@ -46,7 +46,7 @@ public class PublicacaoController {
 		publicacao.setUsuario(usuario);
 		publicacao.setNome(nomeImagem.getOriginalFilename());
 		String pathFolder = "temp/img/";
-		publicacao.setCaminhoImagem("/" + pathFolder + publicacao.getNome());
+		publicacao.setCaminhoImagem(pathFolder + publicacao.getNome());
 		String path = request.getServletContext().getRealPath("/") + pathFolder + publicacao.getNome();
 		
 		try{
@@ -72,7 +72,7 @@ public class PublicacaoController {
 	public String visualizarFormAlterarPublicacao(@PathVariable(value="id") Integer idPublicacao,
 			Model model){
 		model.addAttribute("publicacao", publicacaoDao.getPublicacao(idPublicacao));
-		model.addAttribute("acao", "/publicacao/update");
+		model.addAttribute("acao", "/photobook/publicacao/update");
 		return "editar_publicacao";
 	}
 	

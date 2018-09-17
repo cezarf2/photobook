@@ -1,17 +1,16 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-
 <form:form method="post" modelAttribute="publicacao" action="${url_base}${acao}" enctype="multipart/form-data">
 
 	<form:input path="id" type="hidden" />
 	
-	<c:if test="${acao eq '/publicacao/newpublicacao'}">
+	<c:if test="${acao eq '/photobook/publicacao/newpublicacao'}">
 		<input id="elemFile" type="file" name="imagem" accept="image/*">
 		<a href="#" id="selectFile" role="button" class="btn btn-info">Selecione a imagem</a>
 		<div id="viewImage"></div>
 	</c:if>
-	<c:if test="${acao eq '/publicacao/update'}">
+	<c:if test="${acao eq '/photobook/publicacao/update'}">
 		<div id="viewImage">
 			<img src="${publicacao.caminhoImagem}" class="img-responsive">
 		</div>

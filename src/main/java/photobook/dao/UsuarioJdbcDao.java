@@ -77,7 +77,6 @@ public class UsuarioJdbcDao implements UsuarioDao{
 
 	@Override
 	public Usuario getUsuario(String username) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 }

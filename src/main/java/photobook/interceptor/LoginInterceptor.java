@@ -6,9 +6,6 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
-
-
-
 @Component
 public class LoginInterceptor extends HandlerInterceptorAdapter{
 	
@@ -30,7 +27,7 @@ public class LoginInterceptor extends HandlerInterceptorAdapter{
 		else if(request.getSession().getAttribute("usuarioLogado") != null){
 			return true;
 		}
-		response.sendRedirect("/loginForm");
+		response.sendRedirect("/photobook/loginForm");
 		return false;
 	}
 	

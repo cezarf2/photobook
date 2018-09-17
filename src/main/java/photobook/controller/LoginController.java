@@ -14,7 +14,7 @@ import photobook.model.Usuario;
 
 @Controller
 public class LoginController {
-	
+
 	@Autowired
 	private UsuarioDao usuarioDao;
 	
