@@ -51,7 +51,7 @@
 											<span class="glyphicon glyphicon-user"></span>
 										</div>
 										<form:input path="login" type="text" 
-											cssClass="form-control" placeholder="Nome de usuário"/>
+											cssClass="form-control" placeholder="Username"/>
 									</div>
 								</div>
 							</spring:bind>
