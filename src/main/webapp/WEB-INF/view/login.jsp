@@ -75,7 +75,7 @@
 				<div class="panel">
 					<div class="panel-body">
 						<p class="text-center">
-							Você não tem conta? <a href="${url_base}users/add">Cadastre-se</a>
+							Você não possui conta? <a href="${url_base}users/add">Cadastre-se</a>
 						</p>
 					</div>
 				</div>
