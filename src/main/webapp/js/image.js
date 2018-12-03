@@ -9,7 +9,7 @@ selectFile.click(function(){
 
 $(document).ready(function(){
 	$("#elemFile").change(function() {
-		if(typeof (FileReader) !== "undefined"){
+		if(typeof (FileReader) != "undefined"){
 			var viewImage = $("#viewImage");
 			viewImage.empty();
 			
