@@ -8,4 +8,8 @@ import photobook.model.Usuario;
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Integer>{
 
+	Usuario findByLogin(String login);
+	
+	Usuario findByNome(String nome);
+
 }
